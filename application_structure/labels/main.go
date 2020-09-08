@@ -18,4 +18,17 @@ outer:
 		}
 	}
 	fmt.Println("Next instruction.")
+	i := 0
+loop:
+	if i < 5 {
+		fmt.Println(i)
+		i++
+		goto loop
+	}
+	language := "golang"
+	switch language {
+	case "Python":
+		fmt.Println("You are learning Python")
+	}
+
 }
